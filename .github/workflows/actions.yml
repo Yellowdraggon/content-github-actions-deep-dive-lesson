@@ -28,7 +28,7 @@ jobs:
             zip -r ../${{ github.sha }}.zip .
 
       - name: Archive Artifect
-        uses: actions/upload-artifect@v2
+        uses: actions/upload-artifact@v2
         with:
           name: zipp-bundled
           path: ${{ github.sha }}.zip 
